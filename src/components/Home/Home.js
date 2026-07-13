@@ -25,6 +25,11 @@ function Home() {
                 <strong className="main-name"> Abhishek Gupta</strong>
               </h1>
 
+              <p className="heading-tagline">
+                I build production multi-agent LLM systems on Microsoft Azure —
+                shipping AI that survives contact with real users.
+              </p>
+
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>

@@ -284,6 +284,22 @@ button:focus {
   color: #cd5ff8;
 }
 
+.heading-tagline {
+  padding-left: 50px !important;
+  font-size: 1.25em !important;
+  color: rgba(245, 240, 255, 0.75) !important;
+  max-width: 620px;
+  text-align: left;
+  margin-bottom: 0 !important;
+}
+
+@media (max-width: 767px) {
+  .heading-tagline {
+    padding-left: 20px !important;
+    font-size: 1.05em !important;
+  }
+}
+
 .Typewriter__wrapper {
   font-size: 2.2em !important;
   color: #be6adf !important;
@@ -740,4 +756,236 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+/* --------- */
+/* Impact stats (Home)  */
+/* --------- */
+.home-stats-row {
+  margin-top: 30px !important;
+  padding: 18px 8px !important;
+  border: 1.5px solid rgba(200, 137, 230, 0.35);
+  border-radius: 12px;
+  background: rgba(120, 60, 170, 0.08);
+  text-align: center !important;
+}
+
+.home-stat h2 {
+  font-size: 2.4em !important;
+  font-weight: 700 !important;
+  margin-bottom: 2px !important;
+}
+
+.home-stat p {
+  font-size: 0.85em !important;
+  color: rgba(245, 240, 255, 0.7) !important;
+  margin-bottom: 0 !important;
+}
+
+@media (max-width: 767px) {
+  .home-stat h2 {
+    font-size: 1.8em !important;
+  }
+  .home-stat p {
+    font-size: 0.72em !important;
+  }
+}
+
+/* --------- */
+/* Tech tile labels  */
+/* --------- */
+.tech-icon-label {
+  display: block !important;
+  font-size: 0.24em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+  color: rgba(245, 240, 255, 0.85) !important;
+  letter-spacing: 0.4px !important;
+}
+
+/* --------- */
+/* AI & LLM skill chips  */
+/* --------- */
+.ai-skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 860px;
+  padding: 10px 15px 0;
+}
+
+.ai-skill-chip {
+  display: inline-block;
+  padding: 10px 22px;
+  font-size: 1.05em;
+  font-weight: 500;
+  color: rgba(245, 240, 255, 0.92);
+  border: 1.7px solid rgba(200, 137, 230, 0.637);
+  border-radius: 30px;
+  background: rgba(120, 60, 170, 0.1);
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
+  transition: all 0.4s ease 0s;
+}
+
+.ai-skill-chip:hover {
+  transform: scale(1.05);
+  border: 1.7px solid rgba(197, 115, 230, 0.883);
+  background: rgba(120, 60, 170, 0.25);
+}
+
+/* --------- */
+/* Project cards (redesigned)  */
+/* --------- */
+.project-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 22px 0 22px;
+}
+
+.project-card-icon {
+  font-size: 2.4em;
+  color: #c770f0;
+  line-height: 1;
+}
+
+.project-card-badge {
+  font-size: 0.72em;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: rgba(245, 240, 255, 0.85);
+  border: 1px solid rgba(200, 137, 230, 0.55);
+  border-radius: 20px;
+  padding: 5px 14px;
+  background: rgba(120, 60, 170, 0.15);
+}
+
+.project-card-title {
+  font-size: 1.25em !important;
+  font-weight: 600 !important;
+  padding-top: 6px;
+}
+
+.project-tech-chips {
+  margin-top: auto;
+  padding: 14px 0 4px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  justify-content: flex-start;
+}
+
+.project-tech-chip {
+  font-size: 0.72em;
+  font-weight: 500;
+  color: #d9b8f0;
+  border: 1px solid rgba(200, 137, 230, 0.45);
+  border-radius: 14px;
+  padding: 3px 10px;
+  background: rgba(120, 60, 170, 0.12);
+  white-space: nowrap;
+}
+
+.project-card-buttons {
+  padding-top: 12px;
+}
+
+/* --------- */
+/* Experience  */
+/* --------- */
+.experience-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
+
+.experience-timeline {
+  text-align: left;
+}
+
+.experience-role-header {
+  padding-bottom: 10px;
+}
+
+.experience-role-header h3 {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.experience-role-header h4 {
+  font-size: 1.15em;
+  font-weight: 500;
+  color: rgba(245, 240, 255, 0.9);
+}
+
+.experience-company-link {
+  color: rgba(245, 240, 255, 0.9) !important;
+  text-decoration: none !important;
+  border-bottom: 1px dashed rgba(200, 137, 230, 0.6);
+}
+
+.experience-company-link:hover {
+  color: #c770f0 !important;
+}
+
+.experience-meta {
+  font-size: 0.95em;
+  color: rgba(216, 199, 232, 0.75);
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.experience-live-link {
+  color: #c770f0 !important;
+  text-decoration: none !important;
+  font-size: 0.95em;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.experience-live-link:hover {
+  text-decoration: underline !important;
+}
+
+.experience-timeline .resume {
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.experience-badges {
+  list-style: none;
+  padding: 10px 0 0 0;
+  margin: 0;
+}
+
+.experience-badge {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  text-align: left;
+  border: 1.5px solid rgba(200, 137, 230, 0.35);
+  border-radius: 10px;
+  background: rgba(120, 60, 170, 0.08);
+  padding: 16px 20px;
+  margin-bottom: 14px;
+}
+
+.experience-badge-icon {
+  font-size: 1.9em;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.experience-badge b {
+  font-size: 1.05em;
+}
+
+.experience-badge p {
+  margin-bottom: 0;
+  color: rgba(216, 199, 232, 0.85);
+  font-size: 0.95em;
 }

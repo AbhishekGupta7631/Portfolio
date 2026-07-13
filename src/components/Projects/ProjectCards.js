@@ -7,32 +7,41 @@ import { BsGithub } from "react-icons/bs";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" height={"200px"}/>
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
+      <div className="project-card-top">
+        <span className="project-card-icon">{props.icon}</span>
+        <span className="project-card-badge">{props.category}</span>
+      </div>
+      <Card.Body className="d-flex flex-column">
+        <Card.Title className="project-card-title">{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
+        <div className="project-tech-chips">
+          {props.tags &&
+            props.tags.map((tag) => (
+              <span key={tag} className="project-tech-chip">
+                {tag}
+              </span>
+            ))}
+        </div>
+        <div className="project-card-buttons">
+          {props.ghLink && (
+            <Button variant="primary" href={props.ghLink} target="_blank">
+              <BsGithub /> &nbsp; GitHub
+            </Button>
+          )}
+          {props.demoLink && (
+            <Button
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              style={{ marginLeft: props.ghLink ? "10px" : "0px" }}
+            >
+              <CgWebsite /> &nbsp;
+              {props.demoLabel || "Live"}
+            </Button>
+          )}
+        </div>
       </Card.Body>
     </Card>
   );

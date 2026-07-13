@@ -2,11 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/myimg.png";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -19,29 +15,47 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-            I am a CSE graduate from GALGOTIAS UNIVERSITY (2020-2024). I have a passion to learn new things and apply my knowledge in the real life situations. I am a keen learner, hard working and dedicated towards my work. As I know it's not about the destination but more about the journey along with that I can easily get close to people from different background. My objective is to make a meaningful contribution as much as possible so that I could become better day by day. Also this gives me an inspiration to grow up with the time.
-              <br /> I am eager to start my career in the software industry and believe that your esteemed company could provide the ideal environment for me to grow and contribute.
-              <i>
-                
-              <br/>
-              <br/>
-
-                <b className="purple"> I have skills in React.js, Node JS, JavaScript, HTML, and CSS. I am confident that my background and enthusiasm for this field make me a strong candidate. </b>
-              </i>
+              I'm an <b className="purple">AI Engineer</b> at{" "}
+              <b className="purple">Acumant Technology / Betabridge Ventures</b>,
+              where I build production multi-agent LLM systems on Microsoft
+              Azure. I shipped <b className="purple">ImpleAI</b> — a
+              multi-agent platform whose Flow, Test Case, Training, Gantt, and
+              Support agents automate Dynamics 365 F&amp;O consulting
+              workflows — now finalized as a product and running in active
+              client demos.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              I've also delivered AI analytics bots for enterprise clients{" "}
+              <b className="purple">Orkla</b> and <b className="purple">ABB</b>{" "}
+              — grounding LLMs in real business data with RAG pipelines,
+              structured evaluation harnesses, and Azure Cognitive Search.
+              <br />
+              <br />
+              My day-to-day toolkit spans{" "}
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                in areas related to{" "}
                 <b className="purple">
-                  Web Development.
-                </b>
+                  agent orchestration (LangChain, LangGraph, AutoGen, CrewAI),
+                </b>{" "}
+                <b className="purple">FastAPI microservices,</b>{" "}
+                <b className="purple">React / Next.js frontends,</b> and{" "}
+                <b className="purple">Docker CI/CD on Azure.</b>
               </i>
-              <br />
-              <br />
-             
             </p>
+
+            <Row className="home-stats-row">
+              <Col xs={4} className="home-stat">
+                <h2 className="purple">5</h2>
+                <p>AI agents shipped in one platform</p>
+              </Col>
+              <Col xs={4} className="home-stat">
+                <h2 className="purple">4</h2>
+                <p>Production systems delivered at work</p>
+              </Col>
+              <Col xs={4} className="home-stat">
+                <h2 className="purple">2</h2>
+                <p>Enterprise clients — Orkla &amp; ABB</p>
+              </Col>
+            </Row>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
@@ -53,11 +67,11 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me  
-              <br/>
+              Feel free to <span className="purple">connect </span>with me
+              <br />
               <span className="purple">
-              abhishekgupta7631@gmail.com <br/>
-              +91 7631273371
+                abhishekgupta7631@gmail.com <br />
+                +91 7631273371
               </span>
             </p>
             <ul className="home-about-social-links">
@@ -71,7 +85,7 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
-             
+
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/abhishek-gupta-a4824b213/"
