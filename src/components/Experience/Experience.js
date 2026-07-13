@@ -9,7 +9,7 @@ function Experience() {
   return (
     <Container fluid className="experience-section">
       <Particle />
-      <Container>
+      <Container className="experience-content">
         <h1 className="project-heading">
           Professional <strong className="purple">Experience</strong>
         </h1>
@@ -31,11 +31,20 @@ function Experience() {
                   rel="noreferrer"
                   className="experience-company-link"
                 >
-                  Acumant Technology / Betabridge Ventures
+                  Acumant Technology
+                </a>{" "}
+                /{" "}
+                <a
+                  href="https://www.linkedin.com/company/beta-hub-ai/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="experience-company-link"
+                >
+                  Betabridge Ventures
                 </a>
               </h4>
               <p className="experience-meta">
-                Apr 2025 – Present &nbsp;·&nbsp; Noida, India
+                September 2024 – Present &nbsp;·&nbsp; Noida, India
               </p>
             </div>
 

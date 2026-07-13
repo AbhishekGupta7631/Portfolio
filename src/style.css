@@ -903,6 +903,12 @@ button:focus {
   color: white !important;
 }
 
+/* Keep page content above the fixed particles canvas so links stay clickable */
+.experience-content {
+  position: relative;
+  z-index: 1;
+}
+
 .experience-timeline {
   text-align: left;
 }
